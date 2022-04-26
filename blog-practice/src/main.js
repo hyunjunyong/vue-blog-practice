@@ -1,16 +1,14 @@
 import Vue from 'vue';
 import App from './App.vue';
-import router from 'vue-router';
+import VueRouter from 'vue-router';
+import Routes from './router/index';
 Vue.config.productionTip = false;
-
-// 라우터 인스턴스 생성
-var router = new VueRouter({
-  // 라우터 옵션
+Vue.use(VueRouter);
+const router = new VueRouter({
+  routes: Routes,
 });
 
-// 인스턴스에 라우터 인스턴스를 등록
-
 new Vue({
-  router: router,
+  router,
   render: (h) => h(App),
 }).$mount('#app');

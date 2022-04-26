@@ -17,8 +17,8 @@ export default {
   },
   methods: {
     btn() {
-      vIf = !vIf;
-      vShow = !vShow;
+      this.vIf = !this.vIf;
+      this.vShow = !this.vShow;
     },
   },
 };
