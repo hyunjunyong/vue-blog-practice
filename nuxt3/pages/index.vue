@@ -1,6 +1,4 @@
-<template>
-  <div id="name">123123</div>
-</template>
+<template>Hello, world!</template>
 
 <script setup></script>
 
