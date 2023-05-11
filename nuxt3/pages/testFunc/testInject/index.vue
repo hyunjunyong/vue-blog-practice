@@ -1,11 +1,17 @@
 <template>
-  <div class="test_inject">{{ message }}</div>
+  <div class="test_inject">
+    <p>{{ name }}</p>
+    <!-- <button @click="updateLocation">{{ location }}</button> -->
+  </div>
 </template>
 
 <script setup>
 import { inject } from 'vue';
+const nuxtApp = useNuxtApp();
+// const message = inject('message');
+const { location, updateLocation } = inject('location');
 
-const message = inject('message', 'hello');
+const name = nuxtApp.$hello('jhy');
 </script>
 
 <style scoped>
@@ -17,7 +23,7 @@ const message = inject('message', 'hello');
   height: 300px;
   border-radius: 10px;
   width: 20%;
-  margin: 10% 0 0 40%;
+  margin: 10% 0 0 10%;
   background-color: yellow;
   border: 1px solid #ddd;
 }
