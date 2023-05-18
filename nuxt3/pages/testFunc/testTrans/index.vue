@@ -1,15 +1,21 @@
 <template>
   <div id="testTrans">
-    <button @click="show = !show">Toggle</button>
-    <!-- <Transition >
-      <p v-if="show">hello</p>
-    </Transition>
-    <Transition name="slide-fade">
+    <div class="trans_Btn">
+      <button @click="show = !show">Toggle</button>
+    </div>
+
+    <!-- <Transition name="slide-fade">
       <p v-if="show">hello</p>
     </Transition> -->
-    <Transition name="bounce">
-      <p v-if="show">Hello here is some bouncy text!</p>
-    </Transition>
+    <div class="trans_result">
+      <Transition>
+        <p v-if="show">hello</p>
+      </Transition>
+
+      <!-- <Transition name="bounce">
+        <p v-if="show">Hello here is some bouncy text!</p>
+      </Transition> -->
+    </div>
   </div>
 </template>
 
@@ -18,17 +24,30 @@ const show = ref(false);
 </script>
 
 <style scoped>
-#testTrans {
+.trans_Btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 10% 0 0 10%;
+  background-color: yellow;
+  border: 1px solid #ddd;
+}
+.trans_result {
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 20px;
+  width: 200px;
   height: 200px;
   border-radius: 10px;
-  width: 14%;
   margin: 10% 0 0 10%;
-  background-color: yellow;
+  color: white;
+  background-color: blue;
   border: 1px solid #ddd;
+  text-align: center;
 }
 
 .v-enter-active,
