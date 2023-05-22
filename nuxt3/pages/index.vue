@@ -8,6 +8,4 @@
 const firstLesson = useFirstLesson();
 </script>
 
-<script setup></script>
-
 <style scoped></style>
