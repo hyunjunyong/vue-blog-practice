@@ -555,6 +555,30 @@
     unimport "^3.0.6"
     untyped "^1.3.2"
 
+"@nuxt/kit@npm:@nuxt/kit-edge@latest":
+  version "3.5.2-28079960.a672cd7a"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.5.2-28079960.a672cd7a.tgz#fc9089de2adbb4316dd84e0e2204376b0f0fce5d"
+  integrity sha512-QdnO3VA0Gj5xMFP8ExVnzlXVtLac4tpsuJ0+cIvsWeFwjGdbDX5h09FAmbdHqxdyREkZnx9G5MwyWrPq37WMUA==
+  dependencies:
+    "@nuxt/schema" "npm:@nuxt/schema-edge@3.5.2-28079960.a672cd7a"
+    c12 "^1.4.1"
+    consola "^3.1.0"
+    defu "^6.1.2"
+    globby "^13.1.4"
+    hash-sum "^2.0.0"
+    ignore "^5.2.4"
+    jiti "^1.18.2"
+    knitwork "^1.0.0"
+    lodash.template "^4.5.0"
+    mlly "^1.2.1"
+    pathe "^1.1.0"
+    pkg-types "^1.0.3"
+    scule "^1.0.0"
+    semver "^7.5.1"
+    unctx "^2.3.0"
+    unimport "^3.0.7"
+    untyped "^1.3.2"
+
 "@nuxt/postcss8@^1.1.3":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@nuxt/postcss8/-/postcss8-1.1.3.tgz#a7f8f6f2a664430bbdd3b175498eb693e0b1b351"
@@ -582,6 +606,21 @@
     std-env "^3.3.3"
     ufo "^1.1.2"
     unimport "^3.0.6"
+    untyped "^1.3.2"
+
+"@nuxt/schema@npm:@nuxt/schema-edge@3.5.2-28079960.a672cd7a":
+  version "3.5.2-28079960.a672cd7a"
+  resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.5.2-28079960.a672cd7a.tgz#f41f9baef9c9e0d800be7b11af32bf387166bb47"
+  integrity sha512-S+FBKDvsIVHXchswUx/0r38ujfc19+yxm4mmHIgRDPLtLb8I52wY0TzPIDEqDqnjHhMwfb/EgX8MbdEqPTLkvg==
+  dependencies:
+    defu "^6.1.2"
+    hookable "^5.5.3"
+    pathe "^1.1.0"
+    pkg-types "^1.0.3"
+    postcss-import-resolver "^2.0.0"
+    std-env "^3.3.3"
+    ufo "^1.1.2"
+    unimport "^3.0.7"
     untyped "^1.3.2"
 
 "@nuxt/telemetry@^2.2.0":
@@ -826,6 +865,15 @@
     "@supabase/realtime-js" "^2.7.1"
     "@supabase/storage-js" "^2.3.1"
     cross-fetch "^3.1.5"
+
+"@tailvue/nuxt@^0.1.68":
+  version "0.1.68"
+  resolved "https://registry.yarnpkg.com/@tailvue/nuxt/-/nuxt-0.1.68.tgz#ae042c0f82933141ea9d81080f3e3bb75c6472fb"
+  integrity sha512-AFLn6skqX/UbAZZv4IsiGX9WMi1ET9jSt0xOFYu0GgfDyjLq2iVx491sKcntfyZ6IGzxdN+8hz1miPQwms4ScA==
+  dependencies:
+    "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
+    pathe "^0.2.0"
+    tailvue "^0.1.30"
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
@@ -3860,6 +3908,11 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+pathe@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/pathe/-/pathe-0.2.0.tgz#30fd7bbe0a0d91f0e60bae621f5d19e9e225c339"
+  integrity sha512-sTitTPYnn23esFR3RlqYBWn4c45WGeLcsKzQiUpXJAyfcWkolvlYpV8FLo7JishK946oQwMFUCHXQ9AjGPKExw==
+
 pathe@^1.0.0, pathe@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-1.1.0.tgz#e2e13f6c62b31a3289af4ba19886c230f295ec03"
@@ -4754,6 +4807,13 @@ svgo@^3.0.2:
     csso "^5.0.5"
     picocolors "^1.0.0"
 
+tailvue@^0.1.30:
+  version "0.1.68"
+  resolved "https://registry.yarnpkg.com/tailvue/-/tailvue-0.1.68.tgz#578f4662e5bca067696b389c12574c20c9bde231"
+  integrity sha512-59F/5WXs+9u1dAir9pAfel0hp9PA616yA/4QaRUCxszSPVJSqv4qkvLhLSGqaTHQfndXmo1BORdyOOSJTUcIsg==
+  dependencies:
+    vue "^3.2.21"
+
 tailwind-config-viewer@^1.7.2:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/tailwind-config-viewer/-/tailwind-config-viewer-1.7.2.tgz#3d8242e6ef69d08f388c5dadb40eee62d4ae6386"
@@ -5012,6 +5072,23 @@ unimport@^3.0.6:
     strip-literal "^1.0.1"
     unplugin "^1.3.1"
 
+unimport@^3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/unimport/-/unimport-3.0.7.tgz#9453fc2a0b816240490d2829279547754c7ea147"
+  integrity sha512-2dVQUxJEGcrSZ0U4qtwJVODrlfyGcwmIOoHVqbAFFUx7kPoEN5JWr1cZFhLwoAwTmZOvqAm3YIkzv1engIQocg==
+  dependencies:
+    "@rollup/pluginutils" "^5.0.2"
+    escape-string-regexp "^5.0.0"
+    fast-glob "^3.2.12"
+    local-pkg "^0.4.3"
+    magic-string "^0.30.0"
+    mlly "^1.2.1"
+    pathe "^1.1.0"
+    pkg-types "^1.0.3"
+    scule "^1.0.0"
+    strip-literal "^1.0.1"
+    unplugin "^1.3.1"
+
 universalify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
@@ -5222,7 +5299,7 @@ vue-router@^4.2.0:
   dependencies:
     "@vue/devtools-api" "^6.5.0"
 
-vue@^3.3.2:
+vue@^3.2.21, vue@^3.3.2:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.3.4.tgz#8ed945d3873667df1d0fcf3b2463ada028f88bd6"
   integrity sha512-VTyEYn3yvIeY1Py0WaYGZsXnz3y5UnGi62GjVEqvEGPl6nxbOrCXbVOTQWBEJUqAyTUk2uJ5JLVnYJ6ZzGbrSw==
