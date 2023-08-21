@@ -46,32 +46,38 @@ definePageMeta({
         return abortNavigation(
           createError({
             statusCode: 404,
-            message: "Chapter not found",
+            message: 'Chapter not found',
           })
         );
       }
 
-      const lesson = chapter.lessons.find((lesson) => lesson.slug === params.lessonSlug);
+      const lesson = chapter.lessons.find(
+        (lesson) => lesson.slug === params.lessonSlug
+      );
 
       if (!lesson) {
         return abortNavigation(
           createError({
             statusCode: 404,
-            message: "Lesson not found",
+            message: 'Lesson not found',
           })
         );
       }
     },
-    "auth",
+    'auth',
   ],
 });
 
 const chapter = computed(() => {
-  return course.chapters.find((chapter) => chapter.slug === route.params.chapterSlug);
+  return course.chapters.find(
+    (chapter) => chapter.slug === route.params.chapterSlug
+  );
 });
 
 const lesson = computed(() => {
-  return chapter.value.lessons.find((lesson) => lesson.slug === route.params.lessonSlug);
+  return chapter.value.lessons.find(
+    (lesson) => lesson.slug === route.params.lessonSlug
+  );
 });
 
 const title = computed(() => {
@@ -81,7 +87,7 @@ useHead({
   title,
 });
 
-const progress = useLocalStorage("progress", []);
+// const progress = useLocalStorage("progress", []);
 
 const isLessonComplete = computed(() => {
   if (!progress.value[chapter.value.number - 1]) {
@@ -100,8 +106,7 @@ const toggleComplete = () => {
     progress.value[chapter.value.number - 1] = [];
   }
 
-  progress.value[chapter.value.number - 1][
-    lesson.value.number - 1
-  ] = !isLessonComplete.value;
+  progress.value[chapter.value.number - 1][lesson.value.number - 1] =
+    !isLessonComplete.value;
 };
 </script>
